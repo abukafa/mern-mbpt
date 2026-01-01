@@ -15,6 +15,9 @@ export const initialState = {
 
 export function testReducer(state, action) {
   switch (action.type) {
+    case "NEXT_STEP":
+      return { ...state, step: state.step + 1 };
+
     case "ANSWER":
       return {
         ...state,
