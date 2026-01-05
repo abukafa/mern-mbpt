@@ -24,8 +24,16 @@ export default function Test() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="w-full max-w-xl space-y-4">
+    <div class="text-slate-100 min-h-[80vh] flex items-center justify-center">
+      <main class="w-full max-w-xl px-5">
+        <div class="flex items-center justify-center">
+          <img
+            src="img/adults.png"
+            class="h-40 w-full object-cover"
+            alt=""
+            id="heroImage"
+          />
+        </div>
         <ProgressBar current={state.step + 1} total={questions.length} />
         <QuestionCard
           question={question.text}
@@ -33,7 +41,7 @@ export default function Test() {
           weight={question.weight}
           onAnswer={handleAnswer}
         />
-      </div>
+      </main>
     </div>
   );
 }

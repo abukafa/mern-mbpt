@@ -1,0 +1,22 @@
+.dot {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  border: 2px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #9ca3af;
+  transition: all 0.2s;
+}
+.dot:hover {
+  border-color: #6366f1;
+  color: #6366f1;
+}
+.dot:active {
+  background: #6366f1;
+  border-color: #6366f1;
+  color: white;
+  transform: scale(1.1);
+}
