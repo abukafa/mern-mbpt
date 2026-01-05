@@ -11,7 +11,9 @@ export default function MainLayout() {
       <nav className="sticky top-0 z-50 bg-white/70 dark:bg-gray-900/70 backdrop-blur border-b border-gray-200 dark:border-gray-800">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
           <div>
-            <p className="font-bold text-lg">MBPT</p>
+            <p>
+              <span className="font-bold text-lg">MBPT</span> • Jaz Academy
+            </p>
             <p className="text-xs text-gray-500 dark:text-gray-400">
               Motivation-Based Personality Test
             </p>

@@ -31,7 +31,7 @@ export default function Chart({ scores }) {
   }, [scores]);
 
   return (
-    <div class="w-full h-full bg-white/80 dark:bg-gray-800/70 rounded-3xl p-4 md:p-8 shadow transition-transform duration-700 ease-in-out scale-100 hover:scale-105">
+    <div className="w-full h-full bg-white/80 dark:bg-gray-800/70 rounded-3xl p-4 md:p-8 shadow transition-transform duration-700 ease-in-out scale-100 hover:scale-105">
       <h2 className="font-semibold mb-4 hidden md:block">Peta Motivasi</h2>
       <canvas ref={canvasRef} />
     </div>

@@ -60,9 +60,9 @@ export default function Welcome() {
               >
                 <path d="M10 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M.664 10.59a1.651 1.651 0 0 1 0-1.186A10.004 10.004 0 0 1 10 3c4.257 0 7.893 2.66 9.336 6.41.147.381.146.804 0 1.186A10.004 10.004 0 0 1 10 17c-4.257 0-7.893-2.66-9.336-6.41ZM14 10a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
               </svg>
               Vision
@@ -82,9 +82,9 @@ export default function Welcome() {
                 }`}
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M16.403 12.652a3 3 0 0 0 0-5.304 3 3 0 0 0-3.75-3.751 3 3 0 0 0-5.305 0 3 3 0 0 0-3.751 3.75 3 3 0 0 0 0 5.305 3 3 0 0 0 3.75 3.751 3 3 0 0 0 5.305 0 3 3 0 0 0 3.751-3.75Zm-2.546-4.46a.75.75 0 0 0-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
               </svg>
               Meaning
@@ -104,9 +104,9 @@ export default function Welcome() {
                 }`}
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
               </svg>
               Fear
@@ -126,9 +126,9 @@ export default function Welcome() {
                 }`}
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M14 6a2.5 2.5 0 0 0-4-3 2.5 2.5 0 0 0-4 3H3.25C2.56 6 2 6.56 2 7.25v.5C2 8.44 2.56 9 3.25 9h6V6h1.5v3h6C17.44 9 18 8.44 18 7.75v-.5C18 6.56 17.44 6 16.75 6H14Zm-1-1.5a1 1 0 0 1-1 1h-1v-1a1 1 0 1 1 2 0Zm-6 0a1 1 0 0 0 1 1h1v-1a1 1 0 0 0-2 0Z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
                 <path d="M9.25 10.5H3v4.75A2.75 2.75 0 0 0 5.75 18h3.5v-7.5ZM10.75 18v-7.5H17v4.75A2.75 2.75 0 0 1 14.25 18h-3.5Z" />
               </svg>

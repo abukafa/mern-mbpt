@@ -23,13 +23,15 @@ export default function Test() {
     }
   };
 
+  if (!question) return null;
+
   return (
-    <div class="text-slate-100 min-h-[80vh] flex items-center justify-center">
-      <main class="w-full max-w-xl px-5">
-        <div class="flex items-center justify-center">
+    <div className="text-slate-100 min-h-[80vh] flex items-center justify-center">
+      <main className="w-full max-w-xl px-5">
+        <div className="flex items-center justify-center">
           <img
             src="img/adults.png"
-            class="h-40 w-full object-cover"
+            className="h-40 w-full object-cover"
             alt=""
             id="heroImage"
           />
