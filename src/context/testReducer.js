@@ -6,7 +6,7 @@ export const initialState = {
   rawScores: {
     vision: 0,
     meaning: 0,
-    reward: 0,
+    validation: 0,
     fear: 0,
   },
   scores: null,

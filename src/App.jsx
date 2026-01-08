@@ -6,6 +6,7 @@ import Welcome from "./pages/Welcome";
 import About from "./pages/About";
 import Test from "./pages/Test";
 import Result from "./pages/Result";
+import Review from "./pages/Review";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/test" element={<Test />} />
               <Route path="/result" element={<Result />} />
+              <Route path="/result/:id" element={<Review />} />
             </Route>
           </Routes>
         </TestProvider>

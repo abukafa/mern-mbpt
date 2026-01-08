@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { TestContext } from "../context/TestContext";
+import { UIContext } from "../context/UIContext";
 import QuestionCard from "../components/QuestionCard";
 import ProgressBar from "../components/ProgressBar";
 import { questions } from "../data/questions";
@@ -7,7 +8,8 @@ import { useNavigate } from "react-router-dom";
 
 export default function Test() {
   const { state, dispatch } = useContext(TestContext);
-  const question = questions[state.step];
+  const { audience } = useContext(UIContext);
+  const question = questions[audience][state.step];
   const navigate = useNavigate();
   console.log(state);
 
@@ -17,7 +19,7 @@ export default function Test() {
       payload: opt,
     });
 
-    if (state.step === questions.length - 1) {
+    if (state.step === questions[audience].length - 1) {
       dispatch({ type: "CALCULATE_RESULT" });
       navigate("/result");
     }
@@ -30,13 +32,16 @@ export default function Test() {
       <main className="w-full max-w-xl px-5">
         <div className="flex items-center justify-center">
           <img
-            src="img/adults.png"
+            src={audience == "adult" ? "img/adults.png" : "img/kids.png"}
             className="h-40 w-full object-cover"
             alt=""
             id="heroImage"
           />
         </div>
-        <ProgressBar current={state.step + 1} total={questions.length} />
+        <ProgressBar
+          current={state.step + 1}
+          total={questions[audience].length}
+        />
         <QuestionCard
           question={question.text}
           motivation={question.motivation}

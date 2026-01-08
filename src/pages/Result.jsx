@@ -11,17 +11,14 @@ export default function Result() {
   }
 
   const { state } = useContext(TestContext);
-  const result = resultProfiles.find((r) => isSameCombo(r.id, state.resultKey));
-  console.log(state);
+  const profile = resultProfiles.find((r) =>
+    isSameCombo(r.id, state.resultKey)
+  );
+  console.log("state: " + state);
 
   return (
     <>
-      <ResultCard
-        id={result.id}
-        label={result.label}
-        insight={result.insight}
-        scores={state.scores}
-      />
+      <ResultCard profile={profile} scores={state.scores} />
     </>
   );
 }
