@@ -41,7 +41,6 @@ export default function ResultCard({ profile, scores }) {
 
     if (!res.ok) return;
     const data = await res.json();
-    if (!data?.id) return;
 
     window.location.href = `/result/${data.id}`;
   }
