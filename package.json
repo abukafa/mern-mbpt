@@ -13,6 +13,7 @@
     "@sparticuz/chromium": "^143.0.4",
     "@tailwindcss/vite": "^4.1.18",
     "chart.js": "^4.5.1",
+    "chartjs-node-canvas": "^5.0.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^4.22.1",

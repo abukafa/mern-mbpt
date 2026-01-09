@@ -35,9 +35,12 @@ export default async function handler(req, res) {
 
     await browser.close();
 
-    res.setHeader("Content-Type", "application/pdf");
-    res.setHeader("Content-Length", pdf.length);
-    res.send(pdf);
+    res.writeHead(200, {
+      "Content-Type": "application/pdf",
+      "Content-Length": pdf.length,
+      "Content-Disposition": "inline; filename=result.pdf",
+    });
+    res.end(pdf);
   } catch (err) {
     console.error("PDF ERROR:", err);
     res.status(500).json({ error: err.message });
