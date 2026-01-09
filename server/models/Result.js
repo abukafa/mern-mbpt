@@ -2,13 +2,13 @@ import mongoose from "mongoose";
 
 const ResultSchema = new mongoose.Schema(
   {
-    name: { type: String, required: true },
-    phone: { type: String },
-    email: { type: String, required: true },
-    mode: { type: String },
-    result: { type: Object, required: true },
+    name: String,
+    phone: String,
+    email: String,
+    mode: String,
+    result: Object,
   },
   { timestamps: true }
 );
 
-export default mongoose.model("Result", ResultSchema);
+export default mongoose.models.Result || mongoose.model("Result", ResultSchema);

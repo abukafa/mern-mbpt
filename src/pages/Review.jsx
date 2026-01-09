@@ -39,40 +39,44 @@ export default function Review() {
     <>
       {/* PROFILE */}
       <section className="max-w-6xl mx-auto px-8 pt-4">
-        <table class="table-fixed w-full">
-          <tr>
-            <td className="w-20">
-              <p className="text-md font-semibold">Nama</p>
-            </td>
-            <td>
-              <p className="text-md font-semibold">: {properCase(data.name)}</p>
-            </td>
-            <td className="text-right">
-              <p className="text-md font-semibold">
-                {date.toLocaleString("id-ID", {
-                  day: "numeric",
-                  month: "short",
-                  year: "numeric",
-                })}
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p className="text-md font-semibold">Email</p>
-            </td>
-            <td>
-              <p className="text-md font-semibold">: {data.email}</p>
-            </td>
-            <td className="text-right">
-              <p className="text-md font-semibold">
-                {date.toLocaleString("id-ID", {
-                  hour: "2-digit",
-                  minute: "2-digit",
-                })}
-              </p>
-            </td>
-          </tr>
+        <table className="table-fixed w-full">
+          <tbody>
+            <tr>
+              <td className="w-20">
+                <p className="text-md font-semibold">Nama</p>
+              </td>
+              <td>
+                <p className="text-md font-semibold">
+                  : {properCase(data.name)}
+                </p>
+              </td>
+              <td className="text-right">
+                <p className="text-md font-semibold">
+                  {date.toLocaleString("id-ID", {
+                    day: "numeric",
+                    month: "short",
+                    year: "numeric",
+                  })}
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p className="text-md font-semibold">Email</p>
+              </td>
+              <td>
+                <p className="text-md font-semibold">: {data.email}</p>
+              </td>
+              <td className="text-right">
+                <p className="text-md font-semibold">
+                  {date.toLocaleString("id-ID", {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                  })}
+                </p>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </section>
 
@@ -122,13 +126,13 @@ export default function Review() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="size-6"
+            className="size-6"
           >
             <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             />
           </svg>
         </div>
@@ -137,12 +141,12 @@ export default function Review() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="size-6"
+            className="size-6"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             />
           </svg>
         </div>
@@ -151,12 +155,12 @@ export default function Review() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="size-6"
+            className="size-6"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.355 12.748c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 3.003ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75Zm0 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             />
           </svg>
         </div>
@@ -165,7 +169,7 @@ export default function Review() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="size-6"
+            className="size-6"
           >
             <path d="M9.375 3a1.875 1.875 0 0 0 0 3.75h1.875v4.5H3.375A1.875 1.875 0 0 1 1.5 9.375v-.75c0-1.036.84-1.875 1.875-1.875h3.193A3.375 3.375 0 0 1 12 2.753a3.375 3.375 0 0 1 5.432 3.997h3.943c1.035 0 1.875.84 1.875 1.875v.75c0 1.036-.84 1.875-1.875 1.875H12.75v-4.5h1.875a1.875 1.875 0 1 0-1.875-1.875V6.75h-1.5V4.875C11.25 3.839 10.41 3 9.375 3ZM11.25 12.75H3v6.75a2.25 2.25 0 0 0 2.25 2.25h6v-9ZM12.75 12.75v9h6.75a2.25 2.25 0 0 0 2.25-2.25v-6.75h-9Z" />
           </svg>
@@ -253,13 +257,13 @@ export default function Review() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="size-6"
+            className="size-6"
           >
             <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             />
           </svg>
         </div>
@@ -268,12 +272,12 @@ export default function Review() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="size-6"
+            className="size-6"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             />
           </svg>
         </div>
@@ -282,12 +286,12 @@ export default function Review() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="size-6"
+            className="size-6"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.355 12.748c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 3.003ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75Zm0 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             />
           </svg>
         </div>
@@ -296,7 +300,7 @@ export default function Review() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="size-6"
+            className="size-6"
           >
             <path d="M9.375 3a1.875 1.875 0 0 0 0 3.75h1.875v4.5H3.375A1.875 1.875 0 0 1 1.5 9.375v-.75c0-1.036.84-1.875 1.875-1.875h3.193A3.375 3.375 0 0 1 12 2.753a3.375 3.375 0 0 1 5.432 3.997h3.943c1.035 0 1.875.84 1.875 1.875v.75c0 1.036-.84 1.875-1.875 1.875H12.75v-4.5h1.875a1.875 1.875 0 1 0-1.875-1.875V6.75h-1.5V4.875C11.25 3.839 10.41 3 9.375 3ZM11.25 12.75H3v6.75a2.25 2.25 0 0 0 2.25 2.25h6v-9ZM12.75 12.75v9h6.75a2.25 2.25 0 0 0 2.25-2.25v-6.75h-9Z" />
           </svg>

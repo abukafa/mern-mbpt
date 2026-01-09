@@ -38,8 +38,11 @@ export default function ResultCard({ profile, scores }) {
       }),
     });
 
-    const data = await res.json();
+    if (!res.ok) {
+      throw new Error("API error");
+    }
 
+    const data = await res.json();
     window.location.href = `/result/${data.id}`;
   }
 
