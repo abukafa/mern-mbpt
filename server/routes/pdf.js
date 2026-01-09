@@ -17,7 +17,7 @@ router.get("/:id/pdf", async (req, res) => {
     const page = await browser.newPage();
 
     // Navigate the page to a URL.
-    await page.goto(`http://localhost:3000/result/${req.params.id}`, {
+    await page.goto(`${process.env.BASE_URL}/result/${req.params.id}`, {
       waitUntil: "networkidle0",
     });
 

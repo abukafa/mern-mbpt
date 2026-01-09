@@ -27,4 +27,5 @@ app.get("*", (_, res) =>
   res.sendFile(path.join(__dirname, "dist", "index.html"))
 );
 
-app.listen(3000, () => console.log("Server running http://localhost:3000"));
+// app.listen(3000, () => console.log("Server running http://localhost:3000"));
+export default app;

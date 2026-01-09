@@ -5,6 +5,7 @@ import { UIContext } from "../context/UIContext";
 
 export default function ResultCard({ profile, scores }) {
   const { audience } = useContext(UIContext);
+  if (!profile || !profile[audience]) return null;
   const data = profile[audience];
   const profiles = profile.id.split("+");
   const [open, setOpen] = useState(false);
@@ -38,7 +39,9 @@ export default function ResultCard({ profile, scores }) {
       }),
     });
 
+    if (!res.ok) return;
     const data = await res.json();
+    if (!data?.id) return;
 
     window.location.href = `/result/${data.id}`;
   }
