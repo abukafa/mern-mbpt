@@ -14,7 +14,18 @@ export default function ResultCard({ profile, scores }) {
     email: "",
   });
 
+  const [error, setError] = useState({});
+
   async function handleSubmit() {
+    if (!form.name.trim()) {
+      setError({ name: "Nama harus diisi" });
+      return;
+    }
+    if (!form.email.trim()) {
+      setError({ email: "Email harus diisi" });
+      return;
+    }
+    setError({});
     const res = await fetch("/api/result", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -176,25 +187,31 @@ export default function ResultCard({ profile, scores }) {
             <input
               required
               placeholder="Nama"
-              className="border border-indigo-600 p-2 w-full mb-2 rounded-lg"
+              className="border border-indigo-600 p-2 w-full mt-3 rounded-lg"
               onChange={(e) => setForm({ ...form, name: e.target.value })}
             />
+            {error.name && !form.name && (
+              <small className="text-red-500">{error.name}</small>
+            )}
             <input
               required
               placeholder="No. Telepon"
-              className="border border-indigo-600 p-2 w-full mb-2 rounded-lg"
+              className="border border-indigo-600 p-2 w-full mt-3 rounded-lg"
               onChange={(e) => setForm({ ...form, phone: e.target.value })}
             />
             <input
               required
               placeholder="Email"
-              className="border border-indigo-600 p-2 w-full mb-4 rounded-lg"
+              className="border border-indigo-600 p-2 w-full mt-3 rounded-lg"
               onChange={(e) => setForm({ ...form, email: e.target.value })}
             />
+            {error.email && !form.email && (
+              <small className="text-red-500">{error.email}</small>
+            )}
 
             <button
               onClick={handleSubmit}
-              className="cursor-pointer bg-indigo-600 text-white px-4 py-2 rounded-lg w-full"
+              className="cursor-pointer bg-indigo-600 text-white px-4 py-2 mt-3 rounded-lg w-full"
             >
               Kirim & Generate PDF
             </button>
