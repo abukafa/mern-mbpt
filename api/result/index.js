@@ -34,8 +34,9 @@ export default async function handler(req, res) {
       subject: "Hasil Test MBPT Kamu",
       html: `
         <p>Hi, ${name}</p>
+        <p>Berikut adalah hasil test MBPT kamu:</p>
         <pre>${JSON.stringify(result, null, 2)}</pre>
-        <a href="${process.env.BASE_URL}/api/result/${doc._id}/pdf">
+        <a href="${process.env.BASE_URL}/api/pdf/${doc._id}">
           Download PDF
         </a>
       `,
